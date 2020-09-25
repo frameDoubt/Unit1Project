@@ -1,19 +1,31 @@
+:root{
+    --main-bg-color: #821752;
+    --secondary-bg-color: #DE4463;
+    --main-txt-color: #F8EFD4;
+    --secondary-txt-color: #edc988;
+}
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+    padding: 0;
+    margin: 0;
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /*background-color: ;*/
+    background-color: var(--secondary-bg-color);
     position: fixed;
     top: 0;
-    width: 100;
+    width: 100%;
 }
 li {
     float: left;
 }
 li a {
     display: block;
-    /* color: ; */
+    color: var(--secondary-txt-color);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -25,5 +37,5 @@ main {
     margin-top: 30px;
 }
 main section {
-    align-self: stretch;
+    justify-self: start;
 }
