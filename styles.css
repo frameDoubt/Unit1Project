@@ -20,7 +20,10 @@ li a {
 }
 main {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 2fr 1fr;
     padding: 20px;
     margin-top: 30px;
+}
+main section {
+    align-self: stretch;
 }
