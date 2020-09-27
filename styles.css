@@ -4,6 +4,10 @@
     --main-txt-color: #F8EFD4;
     --secondary-txt-color: #edc988;
 }
+
+/*base styling across all html pages: navbar,
+main, img from ourTeamPage.html*/
+
 body {
     background-color: var(--main-bg-color);
     color: var(--main-txt-color);
@@ -27,19 +31,34 @@ li a {
     display: block;
     color: var(--secondary-txt-color);
     text-align: center;
-    padding: 14px 16px;
+    padding: .90em 1.00em;
     text-decoration: none;
 }
 main {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    padding: 20px;
-    margin-top: 30px;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    padding: 1.00em;
+    margin-top: 1.40em;
 }
 main section {
-    justify-self: start;
+    justify-self: stretch;
 }
 section img {
-    max-width: 100%;
+    max-width: 85%;
     height: auto;
+}
+
+/*styling for blog data input on publishPage.html*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 1.00em;
+    background-color: var(--secondary-bg-color);
+}
+form label {
+    font-size: 1.00rem;
+}
+form textarea {
+    resize: inherit;
 }

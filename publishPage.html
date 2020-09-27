@@ -12,6 +12,8 @@
     </head>
     <body>
         <nav>
+
+            <!-- zero margin, padding, top; overflow hidden; position fixed; width 100% -->
             <ul>
                 <li><a href="index.html">Blog</a></li>
                 <li><a href="publishPage.html">Publish</a></li>
@@ -20,16 +22,19 @@
         </nav>
         <main>
             <section>
-                <h2>Date</h2>
+                <h2>Font style</h2>
             </section>
             <section>
                 <h2>Write your blog here</h2>
                 <form>
-                    <label for="userName">Name:</label><br>
+                    <label for="userName">Name:</label>
                     <input id="userName" name="userName" type="text" placeholder="John Doe or Jane Doe"><br>
                     <label for="date">Blog date:</label><br>
                     <input id="date" name="date" type="date"><br>
-
+                    <label for="blogTitle">Blog title:</label><br>
+                    <input id="blogTitle" name="blogTitle" type="text" placeholder="Write you blog title here."><br>
+                    <label for="blogPost">Blog post:</label><br>
+                    <textarea id="blogPost" name="blogPost" placeholder="This is where you write your blog."></textarea>
                 </form>
             </section>
             <section>
