@@ -26,15 +26,15 @@
             </section>
             <section>
                 <h2>Write your blog here</h2>
-                <form>
-                    <label for="userName">Name:</label>
-                    <input id="userName" name="userName" type="text" placeholder="John Doe or Jane Doe"><br>
+                <form action="/blogPosts/blogPosts.txt" id="blogPostForm">
+                    <label for="userName">Name:</label><br>
+                    <input form="blogPostForm" id="userName" name="userName" type="text" placeholder="John Doe or Jane Doe"><br>
                     <label for="date">Blog date:</label><br>
-                    <input id="date" name="date" type="date"><br>
+                    <input form="blogPostForm" id="date" name="date" type="date"><br>
                     <label for="blogTitle">Blog title:</label><br>
-                    <input id="blogTitle" name="blogTitle" type="text" placeholder="Write you blog title here."><br>
+                    <input form="blogPostForm" id="blogTitle" name="blogTitle" type="text" placeholder="Write you blog title here."><br>
                     <label for="blogPost">Blog post:</label><br>
-                    <textarea id="blogPost" name="blogPost" placeholder="This is where you write your blog."></textarea>
+                    <textarea form="blogPostForm" id="blogPost" name="blogPost" placeholder="This is where you write your blog."></textarea>
                 </form>
             </section>
             <section>

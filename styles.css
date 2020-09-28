@@ -51,8 +51,7 @@ section img {
 /*styling for blog data input on publishPage.html*/
 
 form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     padding: 1.00em;
     background-color: var(--secondary-bg-color);
 }
