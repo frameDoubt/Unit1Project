@@ -34,6 +34,9 @@ li a {
     padding: .90em 1.00em;
     text-decoration: none;
 }
+li a:hover {
+    background-color: var(--main-bg-color);
+}
 main {
     display: grid;
     grid-template-columns: 0.5fr 2fr 1fr;
