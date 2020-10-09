@@ -75,6 +75,10 @@ img[src="images/catFilterTeam.jpg"] {
     border-width: 5px;
     border-color: white;
 }
+img[src="images/tree-736885_1280.jpg"] {
+    border: 5px solid var(--secondary-bg-color);
+    border-radius: 10px;
+}
 p span a {
     color: skyblue;
 }
