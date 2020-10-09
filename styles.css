@@ -15,6 +15,7 @@ body {
     margin: 0;
 }
 ul {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -24,37 +25,65 @@ ul {
     top: 0;
     width: 100%;
 }
-li {
-    float: left;
-}
 li a {
     display: block;
     color: var(--secondary-txt-color);
     text-align: center;
     padding: .90em 1.00em;
     text-decoration: none;
+    font-weight: 600;
+    font-size: 1.25em;
 }
 li a:hover {
     background-color: var(--main-bg-color);
 }
+li a:visited {
+    color: var(--main-txt-color);
+}
+li img {
+    padding-top: .2em;
+    padding-left: .2em;
+    padding-right: .2em;
+    height: 3em;
+    width: auto;
+}
+
+/* body of all html pages */
+
 main {
     display: grid;
-    grid-template-columns: 0.5fr 2fr 1fr;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
     padding: 1.00em;
-    margin-top: 1.40em;
+    margin-top: 2em;
+}
+h2 {
+    text-align: center;
 }
 main section {
     justify-self: stretch;
 }
-section img {
+section {
+    margin-right: .5em;
+}
+div {
+    text-align: center;
+}
+img[src="images/catFilterTeam.jpg"] {
     max-width: 85%;
     height: auto;
+    border-radius: 90%;
+    border-width: 5px;
+    border-color: white;
+}
+p span a {
+    color: skyblue;
 }
 
 /*styling for blog data input on publishPage.html*/
 
 form {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     padding: 1.00em;
     background-color: var(--secondary-bg-color);
 }
@@ -63,4 +92,5 @@ form label {
 }
 form textarea {
     resize: inherit;
+    height: 100%;
 }
